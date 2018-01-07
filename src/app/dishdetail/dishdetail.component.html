@@ -1,5 +1,5 @@
-<div dish1="[selectedDish]">
-  <mat-card role="group">
+
+  <mat-card role="group" *ngIf="promotion" fxFlex>
     <mat-card-header>
       <mat-card-title>
         <h3>{{dish1.name|uppercase}}</h3>
@@ -15,4 +15,3 @@
       <button mat-button>SHARE</button>
     </mat-card-actions>
   </mat-card>
-</div>
