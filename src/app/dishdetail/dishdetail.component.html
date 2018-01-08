@@ -1,16 +1,17 @@
 
-  <mat-card role="group" *ngIf="promotion" fxFlex>
+  <mat-card role="group" *ngIf="dish" fxFlex>
     <mat-card-header>
       <mat-card-title>
-        <h3>{{dish1.name|uppercase}}</h3>
+        <h3>{{dish.name|uppercase}}</h3>
       </mat-card-title>
     </mat-card-header>
-    <img mat-card src={{dish1.image}} alt={{dish1.name}}>
+    <img mat-card src={{dish.image}} alt={{dish.name}}>
     <mat-card-content>
-      <p>{{dish1.description}}
+      <p>{{dish.description}}
       </p>
     </mat-card-content>
     <mat-card-actions>
+      <button mat-button (click)="goBack()">BACK</button>
       <button mat-button>LIKE</button>
       <button mat-button>SHARE</button>
     </mat-card-actions>
